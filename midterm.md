@@ -14,7 +14,7 @@ All codes are implemented in `BDIP03.ipynb`.
 ![02_log](/img/03_log.png)
 
 ### Histogram Equalization
-이미지의 각 픽셀이 고루 분포하도록 픽셀을 변환하는 기법. 모든 픽셀에 대한 CDF를 구하고, Scaling을 통해 범위 조절. `BDIP02.ipynb` 참고
+이미지의 각 픽셀이 고루 분포하도록 픽셀을 변환하는 기법. 모든 픽셀에 대한 CDF를 구하고, Scaling을 통해 범위 조절.
 ![](/img/03_hist_eq.png)
 
 ### Low Pass Filter in Spatial Domain
@@ -26,7 +26,7 @@ LPF를 적용한 결과, 고주파 성분이 일부 감소하고, 결과 뿌옇�
 
 ### Sharpening
 이미지 $F$와 LPF $H$에 대해, 고주파 성분을 $F - F * H = F * (e-H)$ 로 추출할 수 있다.
-
+또는$\nabla^2$ operator를 사용해도 되는데, 수업 자료 참고하기.
 이를 $\alpha$의 가중치를 통해 강조하면 다음과 같은 결과를 얻을 수 있다.
 
 ![02_sharpening](/img/03_sharpening.png)
@@ -36,7 +36,7 @@ All codes are implemented in `BDIP05.ipynb`.
 
 LPF는 Spatial domain에서 컨볼루션을 수행하거나, Frequency domain에서 element-wise로 곱하는 것으로 이미지에 적용할 수 있다.
 ![](/img/05.png)  
-Ideal LPF를 사용했으므로, sinc함수에 의한 ringing effect를 확인할 수 있다.
+Ideal LPF를 사용했으므로, sinc함수에 의한 ringing effect를 확인할 수 있다. Ringing Effect 감소를 위해 Butterworth filter 또는 Gaussian filter를 사용할 수 있다.
 
 ## Binary Operation
 All codes are implemented in `BDIP06.ipynb`.
