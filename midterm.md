@@ -10,8 +10,7 @@ All codes are implemented in `BDIP03.ipynb`.
 ### Log transformation  
 [0, 255]에서 정의되고, 최솟값이 0, 최댓값이 255인 함수를 각 픽셀에 적용하여, 전체적인 밝기를 조절하는 방법
 
-![02_func](/img/03_func.png)  
-다음의 함수를 적용하면 이미지가 다음과 같이 변환된다.  
+![02_func](/img/03_func.png)
 ![02_log](/img/03_log.png)
 
 ### Histogram Equalization
