@@ -71,4 +71,8 @@ All codes are implemented in `BDIP06.ipynb`.
 ![](/img/07_oc.png)
 
 ### Hit-or-Miss Transformation
+##### Structuring Element
+![](/img/07_SE.png)
+
+##### Result
 ![](/img/07_HoM.png)
